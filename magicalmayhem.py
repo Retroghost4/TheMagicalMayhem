@@ -1,7 +1,7 @@
 import pygame
 import random
 
-Width, Height = 2000, 900
+Width, Height = 1500, 900
 window = pygame.display.set_mode((Width, Height))
 pygame.display.set_caption("The Magical Mayhem")
 
