@@ -1,4 +1,5 @@
 import pygame
+import button
 import random
 
 Width, Height = 1500, 900
@@ -6,6 +7,17 @@ window = pygame.display.set_mode((Width, Height))
 pygame.display.set_caption("The Magical Mayhem")
 
 BG = pygame.transform.scale(pygame.image.load("Mayhem1.jpg"), (Width, Height))
+start_img = pygame.image.load('start.jpg').convert_alpha()
+
+class Button():
+  def __init__(self, x, y, image): 
+    self.image = image
+    self.rect = self.image.get_rect()
+    self.rect.topleft = (x, y)
+
+  def draw(self): 
+    screen.blit(self.image, (self.rect.x, self.rect.y))
+  
 
 def draw(): 
   window.blit(BG, (0, 0))
