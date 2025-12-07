@@ -18,7 +18,6 @@ class Button():
   def draw(self): 
     screen.blit(self.image, (self.rect.x, self.rect.y))
   
-
 def draw(): 
   window.blit(BG, (0, 0))
   pygame.display.update()
