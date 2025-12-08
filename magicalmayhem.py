@@ -1,15 +1,18 @@
-import pygame
+import pygame, sys
+from button import Button
 import random
 
 Width, Height = 1500, 900
 window = pygame.display.set_mode((Width, Height))
- pygame.display.set_caption("The Magical Mayhem")
+pygame.display.set_caption("The Magical Mayhem")
 BG = pygame.transform.scale(pygame.image.load("1.png"), (Width, Height))
 
   
 def draw(): 
   window.blit(BG, (0, 0))
   pygame.display.update()
+
+def play_button():
 
 def main(): 
   run = True
