@@ -16,11 +16,8 @@ def main_menu():
   while True: 
     MENU_mouse_pos = pygame.mouse.get_pos()
     PLAY_button = Button(image=pygame.image.load('play button.png'), pos=(375, 450))
-
-   for button in [PLAY_button]: 
-     button.update(window)
-
-def play_button():
+    for button in (PLAY_button):
+       button.update(window)
 
 def main(): 
   run = True
